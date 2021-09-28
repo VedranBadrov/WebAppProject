@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Delete Product</title>
+    <meta charset="utf-8" />
+    <script src="initialize.js"></script>
+    <script defer="defer" src="delete.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="index.html" class="logo">CarHunt.</a>
+      <a href="retrieve.html">View Cars</a>
+      <a href="create.html">Add Cars</a>
+      <a href="delete.html">Delete Cars</a>
+      <a href="update.html">Edit Cars</a>
+      <a href="login.html" class="right">Login</a>
+    </div>
+    <div class="delete-area">
+      
+      <div class="delete-part">
+        <h1>Delete Cars</h1>
+
+        <form method="get" action="index.html">
+          <button type="submit" class="back-button">Back</button>
+
+          <div>
+            <input type="text" class="textbox" name="id" id="id" placeholder="Car ID">
+          </div>
+          
+          
+          <div>
+            <input type="button" class="delete-button" value="Delete" onclick="deleteCar();" />
+          </div>
+          
+      </div>
+      <div class="image3">
+        <img src="image6.jpg" alt="">
+      </div>
+    </div>
+
+    <footer>
+      <p>All Rights Reserved By CarHunt.</p>
+    </footer>
+  </body>
+</html>

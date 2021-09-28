@@ -1,0 +1,700 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Nav */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.logo {
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 35px;
+}
+a {
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #3494db;
+}
+.about-part p{
+  font-size: 18px;
+}
+.about-part b{
+  font-weight: bolder;
+  color: #3494db;
+}
+.search-part p{
+  font-size: 18px;
+}
+.search-part b{
+  color: #3494db;
+}
+
+/* End Nav */
+
+/* Banner */
+.banner-area {
+  position: relative;
+  background-image: url(banner.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.search-area,
+.contact-area,
+.view-area,
+.create-area,
+.delete-area,
+.update-area,
+.login-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.about-area{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 110vh;
+ 
+}
+
+.search-part,
+.about-part,
+.view-part,
+.create-part,
+.update-part,
+.delete-part,
+.login-part {
+  width: 65%;
+  height: 80%;
+}
+
+.about-part {
+  color: white;
+}
+/* End Banner */
+
+/* Buttons etc */
+
+.view-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.add-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.back-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cancelbtn{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.create-button {
+  position: absolute;
+}
+.create-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+  background: none;
+  color: black;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.create-button:focus {
+  outline: none;
+}
+.create-button:hover {
+  color: white;
+  background: #44bd32;
+  cursor: pointer;
+}
+.create-button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6s;
+  transition: 0.7s;
+}
+.create-button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+.delete-button {
+  position: absolute;
+}
+.delete-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+  background: none;
+  color: black;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.delete-button:focus {
+  outline: none;
+}
+.delete-button:hover {
+  color: white;
+  background: #c23616;
+  cursor: pointer;
+}
+.delete-button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6s;
+  transition: 0.7s;
+}
+.delete-button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.edit-button {
+  position: absolute;
+}
+.edit-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+  background: none;
+  color: black;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.edit-button:focus {
+  outline: none;
+}
+.edit-button:hover {
+  color: white;
+  background: #44bd32;
+  cursor: pointer;
+}
+.edit-button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6s;
+  transition: 0.7s;
+}
+.edit-button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.cancelbtn {
+  position: absolute;
+}
+.cancelbtn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+  background: none;
+  color: black;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 20px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.cancelbtn:focus {
+  outline: none;
+}
+.cancelbtn:hover {
+  color: white;
+  background: #c23616;
+  cursor: pointer;
+}
+.cancelbtn:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6s;
+  transition: 0.7s;
+}
+.cancelbtn:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.login-button {
+  position: absolute;
+  top: 45%;
+}
+.login-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+  background: none;
+  color: black;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.login-button:focus {
+  outline: none;
+}
+.login-button:hover {
+  color: white;
+  background: #44bd32;
+  cursor: pointer;
+}
+.login-button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6s;
+  transition: 0.7s;
+}
+.login-button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+  background: none;
+  color: black;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: 0.6s;
+  overflow: hidden;
+}
+button:focus {
+  outline: none;
+}
+button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+button:hover {
+  color: white;
+  background: #3494db;
+  cursor: pointer;
+}
+button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6s;
+  transition: 0.7s;
+}
+button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+}
+
+/* End of Buttons etc */
+
+/* Column container */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.main {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+/* Car Images */
+
+.image{
+    border-radius: 30px;
+    border: 3px solid grey;
+    width: 420px;
+    height: 550px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+    box-shadow: -30px 30px 60px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: .5s linear;
+}
+
+.image:hover::before{
+    width: 0;
+}
+
+.image:nth-child(2)::before{
+    background-image: url(image1.jpg);
+}
+.image2{
+    border-radius: 30px;
+    border: 3px solid grey;
+    width: 420px;
+    height: 550px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+    box-shadow: -30px 30px 60px;
+}
+.image2 img{
+    width: 100%;
+    height: 100%;
+}
+.image2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: .5s linear;
+}
+
+.image2:hover::before{
+    width: 0;
+}
+
+.image2:nth-child(2)::before{
+    background-image: url(image2.jpg);
+}
+.image3{
+    border-radius: 30px;
+    border: 3px solid grey;
+    width: 420px;
+    height: 570px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+    box-shadow: -30px 30px 60px;
+}
+.image3 img{
+    width: 100%;
+    height: 100%;
+}
+.image3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: .5s linear;
+}
+
+.image3:hover::before{
+    width: 0;
+}
+
+.image3:nth-child(2)::before{
+    background-image: url(image6.jpg);
+}
+.image4{
+    border-radius: 30px;
+    border: 3px solid grey;
+    width: 420px;
+    height: 550px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+    box-shadow: -30px 30px 60px;
+}
+.image4 img{
+    width: 100%;
+    height: 100%;
+}
+.image4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: .5s linear;
+}
+
+.image4:hover::before{
+    width: 0;
+}
+
+.image4:nth-child(2)::before{
+    background-image: url(image4.jpg);
+}
+.carkeys{
+  border-radius: 10%;
+  width: 520px;
+  height: 550px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin: 0 65%;
+  margin-bottom: 20%;
+  margin-top: -40%;
+  box-shadow: 30px 30px 70px;
+}
+.carkeys img{
+  width: 100%;
+  height: 100%;
+}
+
+/* End of Car Images */
+
+/* Add Cars Text */
+.create-form,
+.delete-form,
+.edit-form {
+  flex: 1;
+}
+.contact-form,
+.delete-form,
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.textbox {
+  width: calc(50% - 10px);
+  height: 10px;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+  
+}
+
+/* End Add Cars Text*/
+
+/* Contact Us */
+.contact-page {
+  width: 100%;
+  max-width: 1400px;
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  margin-bottom: 80px;
+  color: black;
+  font-size: 50px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+}
+
+.item {
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #322;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #3494db;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.textb {
+  width: calc(50% - 10px);
+  height: 10px;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #3494db;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #3494db;
+  transition: 0.3s linear;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #3494db;
+}
+/* End Contact Us */
+
+h1 {
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  font-size: 24px;
+  line-height: 50px;
+}
+.about-area {
+  background: #262626;
+}
+.search-area {
+  background: #fefefe;
+}
+.contact-area {
+  background: #fefefe;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #262626;
+  padding: 20px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}

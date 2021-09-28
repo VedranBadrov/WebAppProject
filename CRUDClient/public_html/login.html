@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DublinCars.ie</title>
+  <meta charset="UTF-8" />
+  <script src="initialize.js"></script>
+  <script defer="defer" src="login.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" class="logo">CarHunt.</a>
+    <a href="retrieve.html">View Cars</a>
+    <a href="create.html">Add Cars</a>
+    <a href="delete.html">Delete Cars</a>
+    <a href="update.html">Edit Cars</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <div class="login-area">
+    <div class="login-part">
+      <h1>Login Form</h1>
+      <form action="/action_page.php" method="post">
+
+        <div>
+          <input type="text" class="textbox" placeholder="Enter ID" id="id" name="user" required />
+
+          <input type="text" class="textbox" placeholder="Enter Username" id="user" name="user" required />
+
+          <input type="text" class="textbox" placeholder="Enter Password" id="pass" name="pass" required />
+
+          <div>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+          </div>
+
+          <div style="background-color: #f1f1f1"></div>
+          <button type="button" value="Login" class="login-button" onclick="Login();">
+            Login
+          </button>
+        </div>
+        
+      </div>
+
+        <button type="button" value="Logout" class="cancelbtn" onclick="Logout();">
+          Logout
+        </button>
+        
+      </div>
+
+      </form>
+      
+    </div>
+    <div class="carkeys">
+      <img src="lock2.png" alt="">
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>All Rights Reserved By CarHunt.</p>
+  </footer>
+</body>
+
+</html>

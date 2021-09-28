@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Update Product</title>
+    <meta charset="utf-8" />
+    <script src="initialize.js"></script>
+    <script defer="defer" src="update.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+      
+    <div class="navbar">
+      <a href="index.html" class="logo">CarHunt.</a>
+      <a href="retrieve.html">View Cars</a>
+      <a href="create.html">Add Cars</a>
+      <a href="delete.html">Delete Cars</a>
+      <a href="update.html">Edit Cars</a>
+      <a href="login.html">Login</a>
+    </div>
+
+    <div class="update-area">
+      
+      <div class="update-part">
+        <h1>Edit Cars</h1>
+
+        <form action="" class="edit-form">
+
+          <input type="text" class="textbox" name="id" id="id" placeholder="Car ID">
+    
+          <input type="text" class="textbox" name="Make" id="Make" placeholder="Car Make">
+    
+          <input type="text" class="textbox" name="Model" id="Model" placeholder="Car Model">
+    
+          <input type="text" class="textbox"  name="Price" id="Price" placeholder="Car Price">
+    
+          <input type="text" class="textbox"  name="Colour" id="Colour" placeholder="Car Colour">
+         
+          <input type="text" class="textbox"  name="Year" id="Year" placeholder="Car Year">
+    
+        </form>
+
+        <div>
+          <input type="button" class="edit-button" value="Update" name="editCar" id="editCar" onclick="editCar();" />
+        </div>
+
+        <form method="get" action="index.html">
+          <button type="submit" class="back-button">Back</button>
+        </form>
+
+      </div>
+      <div class="image4">
+        <img src="image4.jpg" alt="">
+      </div>
+    </div>
+
+    <footer>
+      <p>All Rights Reserved By CarHunt.</p>
+    </footer>
+  </body>
+</html>

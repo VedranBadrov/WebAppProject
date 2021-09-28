@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>View Cars</title>
+  <meta charset="utf-8" />
+  <script src="initialize.js"></script>
+  <script defer="defer" src="retrieve.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" class="logo">CarHunt.</a>
+    <a href="retrieve.html">View Cars</a>
+    <a href="create.html">Add Cars</a>
+    <a href="delete.html">Delete Cars</a>
+    <a href="update.html">Edit Cars</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <div class="view-area">
+
+    <div class="view-part">
+      <h1>View</h1>
+      <table id="prodTab">
+        <tr>
+          <th>ID</th>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Price</th>
+          <th>Colour</th>
+          <th>Year</th>
+        </tr>
+      </table>
+
+      <form method="get" action="index.html">
+        <button type="submit" class="view-button">Back</button>
+      </form>
+    </div>
+    <div class="image">
+      <img src="image1.jpg" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <p>All Rights Reserved By CarHunt.</p>
+  </footer>
+</body>
+
+</html>
